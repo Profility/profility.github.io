@@ -12,7 +12,7 @@ function dayGreeting() {
         greeting = "Good evening,"
     }
     
-    document.getElementById("greeting").innerHTML = greeting 
+    return greeting;
 }
 
 function randomQuotes(){
@@ -25,7 +25,7 @@ function randomQuotes(){
         '"I like girls with short hair."'
     ]
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").innerHTML = quotes[randomIndex];
+    return quotes[randomIndex];
 }
 
 function openLink(link){
@@ -33,6 +33,6 @@ function openLink(link){
 }
 
 window.onload = function(){
-    dayGreeting();
-    randomQuotes();
+    document.getElementById("greeting").innerHTML = dayGreeting();
+    document.getElementById("quote").innerHTML = randomQuotes();
 }
