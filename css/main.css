@@ -1,0 +1,19 @@
+@font-face {
+    font-family: monro;
+    src: url(../font/munro.ttf);
+}
+
+body {
+    font-family: monro;
+    background-image: url(../img/background.gif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+}
+
+img {
+    width: 42;
+    height: 42;
+}
