@@ -22,7 +22,8 @@ function randomQuotes(){
         '"Submit your pending assignments!"',
         '"Masters in Procrastination"',
         '"I just want clear skin!"',
-        '"I like girls with short hair."'
+        '"I like girls with short hair."',
+        '"Is it bad that I still like my ex?"'
     ]
     const randomIndex = Math.floor(Math.random() * quotes.length);
     return quotes[randomIndex];
@@ -33,6 +34,6 @@ function openLink(link){
 }
 
 window.onload = function(){
-    document.getElementById("greeting").innerHTML = dayGreeting();
+    // document.getElementById("greeting").innerHTML = dayGreeting();
     document.getElementById("quote").innerHTML = randomQuotes();
 }
