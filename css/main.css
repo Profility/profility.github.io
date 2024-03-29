@@ -30,7 +30,18 @@ img {
     image-rendering: pixelated;
 }
 
-img:hover {
+a {
+    font-size: 30;
+    padding: 10;
+    color: lightskyblue;
+    text-decoration-line: none;
+}
+
+p {
+    font-size: 20;
+}
+
+img:hover, a:hover {
     opacity: 70%
 }
 

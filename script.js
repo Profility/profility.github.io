@@ -1,20 +1,3 @@
-function dayGreeting() {
-    var date = new Date();
-    var currentHours = date.getHours();
-
-    var greeting = ""
-
-    if (currentHours < 12) {
-        greeting = "Good morning,"
-    } else if (currentHours < 18) {
-        greeting = "Good afternoon,"
-    } else {
-        greeting = "Good evening,"
-    }
-    
-    return greeting;
-}
-
 function randomQuotes(){
     const quotes = [
         '"I always manage to forget how to code sometimes."',
@@ -34,6 +17,6 @@ function openLink(link){
 }
 
 window.onload = function(){
-    // document.getElementById("greeting").innerHTML = dayGreeting();
+    getPosts();
     document.getElementById("quote").innerHTML = randomQuotes();
 }
