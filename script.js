@@ -17,6 +17,5 @@ function openLink(link){
 }
 
 window.onload = function(){
-    getPosts();
     document.getElementById("quote").innerHTML = randomQuotes();
 }
