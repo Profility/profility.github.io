@@ -23,7 +23,7 @@ body {
     align-content: center;
 }
 
-img {
+.link {
     width: 42;
     height: 42;
     vertical-align: middle;
@@ -41,7 +41,7 @@ p {
     font-size: 20;
 }
 
-img:hover, a:hover {
+.link:hover, a:hover {
     opacity: 70%
 }
 
