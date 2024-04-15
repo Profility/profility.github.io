@@ -6,7 +6,7 @@ function randomQuotes(){
         '"Masters in Procrastination"',
         '"I just want clear skin!"',
         '"I like girls with short hair."',
-        '"Is it bad that I still like my ex?"'
+        '"Liking someone that likes someone else is crazy."'
     ]
     const randomIndex = Math.floor(Math.random() * quotes.length);
     return quotes[randomIndex];
