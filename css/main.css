@@ -51,6 +51,23 @@ body {
     width: 25px;
 }
 
+@media only screen and (max-width: 1000px) {
+    body {
+        margin-top: 10em;
+        padding: 0;
+    }
+    #content {
+        margin-top: 5em;
+        max-width: 80%;
+    }
+    #profilePic {
+        width: 80px;
+        height: 80px;
+    }
+    .link {
+        width: 25px;
+    }
+}
 
 
 /* Typewriter Effect */
