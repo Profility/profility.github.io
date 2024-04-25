@@ -1,21 +1,29 @@
-function randomQuotes(){
-    const quotes = [
-        '"I always manage to forget how to code sometimes."',
-        '"Curly hair is so hard to manage!"',
-        '"Submit your pending assignments!"',
-        '"Masters in Procrastination"',
-        '"I just want clear skin!"',
-        '"I like girls with short hair."',
-        '"Liking someone that likes someone else is crazy."'
-    ]
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    return quotes[randomIndex];
+function toggleMusic(){
+    const music = document.getElementById("music")
+    const toggleBtn = document.getElementById("musicToggle")
+    const isPlaying = !music.paused
+
+    if (isPlaying){
+        music.pause()
+        toggleBtn.src = "img/muted.png"
+    }
+    else{
+        music.play()
+        toggleBtn.src = "img/unmuted.png"
+    }
 }
 
-function openLink(link){
-    window.open(link, "_blank");
-}
+function toggleBlog(){
+    const blog = document.getElementById("blog")
+    const toggleBtn = document.getElementById("blogToggle")
+    const isHidden = blog.style.display === "none"
 
-window.onload = function(){
-    document.getElementById("quote").innerHTML = randomQuotes();
+    if (isHidden){
+        blog.style.display = "block"
+        toggleBtn.innerHTML = "Hide Blog Posts"
+    }
+    else{
+        blog.style.display = "none"
+        toggleBtn.innerHTML = "View Blog Posts"
+    }
 }
