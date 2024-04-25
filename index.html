@@ -1,23 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>profility@nazarick</title>
-        <meta name="description" content="profility@nazarick is a personal website for Profility">
-        <meta name="author" content="profility">
-        <link rel="stylesheet"  type="text/css" href="css/main.css">
-        <link rel="icon" type="image/png" href="./img/icon.png">
-        <script src="./script.js"></script>
-    </head>
-    <body>
-       <div class="content">
-            <h1 id="name">profility@nazarick</h1>
-            <h2 id="quote"></h2>
-            <a href="./pages/about.html">/about</a>
-            <a href="./pages/blog.html">/blog</a>
-            <br><br>
-            <img class="link" alt="roblox" src="./img/roblox.png" onclick="openLink('https://www.roblox.com/users/1801341724/profile')">
-            <img class="link" alt="discord" src="./img/discord.png" onclick="openLink('https://discord.com/users/768264821874884608/')">
-            <img class="link" alt="github" src="./img/github.png" onclick="openLink('https://github.com/Profility')">
-            <img class="link" alt="anilist" src="./img/anilist.png" onclick="openLink('https://anilist.co/user/Profility/')">
-       </div>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <title>profility ❤</title>
+    <script src="./script.js"></script>
+    <link rel="icon" href="img/profile.jpg">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <audio id="music" loop autoplay>
+        <source src="music/forever by ilyTOMMY.mp3">
+    </audio>
+    <div id="content">
+        <img id="profilePic" src="img/profile.jpg">
+        <h1>profility</h2>
+        <div id="links">
+            <a title="Discord" href="https://discord.com/users/768264821874884608">
+                <img class="link" src="img/discord.svg"/>
+            </a>
+            <a title="GitHub" href="https://github.com/Profility">
+                <img class="link" src="img/github.svg"/>
+            </a>
+            <a title="Roblox" href="https://www.roblox.com/users/1801341724/profile">
+                <img class="link" src="img/roblox.svg"/>
+            </a>
+            <img id="musicToggle" class="link" onclick="toggleMusic()" src="img/unmuted.png"/>
+        </div>
+        <p id="greet"><i>👋 Hello there! I am PROFILE.</i></p>
+        <p>I'm a highschool student with interests in areas of Information Technology.</p>
+        <p>Particularly coding, cybersecurity, hacking and so on. I also spend a chunk of my day consuming media regarding these topics and gaining more knowledge</p>
+        <p>And as a usual teenager, I also like playing games particulary shooters, watching anime <i>(you can find my list <a href="https://anilist.co/user/Profility/animelist">here</a>)</i> and spending unhealthy amounts of time browsing on TikTok and trying to make friends</p>
+
+        <a id="blogToggle" onclick="toggleBlog()">View Blog Posts</a>
+        <div id="blog">
+            <h3>04/25/2024 - Hello World!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, numquam saepe minus obcaecati possimus nemo repudiandae magni, facilis accusantium voluptate nobis modi quidem dolor ipsum quam adipisci ut consequatur sunt!</p>
+        </div>
+    </div>
+</body>
 </html>

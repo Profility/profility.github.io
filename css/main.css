@@ -1,50 +1,76 @@
-@font-face {
-    font-family: monro;
-    src: url(../font/munro.ttf);
-}
-
 @keyframes fadeIn {
-    0% {opacity: 0%}
-    100% {opacity: 100%}
-}
-
-.content {
-    animation: fadeIn 3s;
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 body {
-    font-family: monro;
-    background-image: url(../img/background.gif);
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    align-content: center;
+    animation: fadeIn 1s ease-in-out;
+    background-color: #232136;
+    color: #ffffff;
+    padding: 10em;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+#content {
+    background-color: #2a273f;
+    padding: 3%;
+    margin: auto;
+    max-width: 35%;
+    border-radius: 3%;
+}
+
+#profilePic {
+    width: 105px;
+    height: 105px;
+}
+
+#content a {
+    color: #907aa9;
+    text-decoration: dotted;
+}
+
+#links img {
+    float: right;
+    margin-left: 4px;
+}
+
+#blogToggle {
+    cursor: pointer;
+}
+
+#blog {
+    display: none;
 }
 
 .link {
-    width: 42;
-    height: 42;
-    vertical-align: middle;
-    image-rendering: pixelated;
+    width: 25px;
 }
 
-a {
-    font-size: 30;
-    padding: 10;
-    color: lightskyblue;
-    text-decoration-line: none;
+
+
+/* Typewriter Effect */
+
+/* #greet {
+    margin: 0;
+    width: 34%;
+    display: inline-block;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(29),
+        cursor .4s step-end infinite alternate;
 }
 
-p {
-    font-size: 20;
+@keyframes cursor {
+    50% { border-color: transparent}
 }
 
-.link:hover, a:hover {
-    opacity: 70%
-}
-
-#quote {
-    font-style: italic;
-}
+@keyframes typing {
+    from { width: 0;}
+} */
