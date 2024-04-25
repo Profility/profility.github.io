@@ -5,7 +5,9 @@
     to {
         opacity: 1;
     }
+
 }
+
 
 body {
     animation: fadeIn 1s ease-in-out;
@@ -24,27 +26,31 @@ body {
     border-radius: 3%;
 }
 
-#profilePic {
-    width: 105px;
-    height: 105px;
-}
-
-#content a {
+.link {
     color: #907aa9;
-    text-decoration: dotted;
-}
-
-#links img {
-    float: right;
-    margin-left: 4px;
-}
-
-#blogToggle {
     cursor: pointer;
 }
 
-.link {
+.link:hover {
+    text-decoration: dotted underline;
+}
+
+#profile {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+}
+
+.icon {
+    opacity: 60%;
+    float: right;
+    margin-left: 4px;
     width: 25px;
+    transition: opacity 0.3s ease;
+}
+
+.icon:hover {
+    opacity: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -56,34 +62,8 @@ body {
         margin-top: 5em;
         max-width: 80%;
     }
-    #profilePic {
+    #profile {
         width: 80px;
         height: 80px;
     }
-    .link {
-        width: 25px;
-    }
 }
-
-
-/* Typewriter Effect */
-
-/* #greet {
-    margin: 0;
-    width: 34%;
-    display: inline-block;
-    border-right: 5px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        typing 2s steps(29),
-        cursor .4s step-end infinite alternate;
-}
-
-@keyframes cursor {
-    50% { border-color: transparent}
-}
-
-@keyframes typing {
-    from { width: 0;}
-} */

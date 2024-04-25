@@ -15,7 +15,7 @@ function toggleMusic(){
 
 function toggleBlog(){
     const blog = document.getElementById("blog")
-    const toggleBtn = document.getElementById("blogToggle")
+    const toggleBtn = document.getElementById("viewBlog")
     const isHidden = blog.style.display === "none"
 
     if (isHidden){
