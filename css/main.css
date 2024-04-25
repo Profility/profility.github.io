@@ -43,10 +43,6 @@ body {
     cursor: pointer;
 }
 
-#blog {
-    display: none;
-}
-
 .link {
     width: 25px;
 }
