@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello! I'm PROFILE, this is my personal website which contains information about me.">
-    <meta property="og:image" content="img/profile.jpg">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Hello! I'm PROFILE, this is my personal website which contains information about me."/>
+    <meta property="og:image" content="img/profile.jpg"/>
     <title>profility ❤</title>
-    <script src="./script.js"></script>
+    <script src="./js/main.js"></script>
     <link rel="icon" href="img/profile.jpg">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <audio id="music" loop>
-        <source src="music/forever by ilyTOMMY.mp3">
-    </audio>
+    <audio id="music"></audio>
     <div id="content">
         <img id="profile" src="img/profile.jpg">
         <div id="title">
@@ -31,17 +29,22 @@
                 <img class="icon" src="img/anilist.svg"/>
             </a>
             <img class="icon" id="musicToggle" onclick="toggleMusic()" src="img/muted.png"/>
+            <div id="navigationWrapper">
+                <ul style="display: inline;" class="navigation">
+                    <li class="navigationItem">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="navigationItem">
+                        <a href="/blog.html">Blog</a>
+                    </li>
+                </ul>
+                <br>
+            </div>
         </div>
         <p id="greet"><i>👋 Hello there! I am PROFILE.</i></p>
         <p>I'm a highschool student with interests in areas of Information Technology.</p>
         <p>Particularly coding, cybersecurity, hacking and so on. I also spend a chunk of my day consuming media regarding these topics and learning, gaining more knowledge</p>
-        <p>And as a usual teenager, I also like playing games particulary shooters, watching anime or movies and spending unhealthy amounts of time on<br> TikTok and trying to make friends</p>
-
-        <a class="link" id="viewBlog" onclick="toggleBlog()">View Blog Posts</a>
-        <div id="blog" style="display: none;">
-            <h3>04/25/2024 - Hello World!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, numquam saepe minus obcaecati possimus nemo repudiandae magni, facilis accusantium voluptate nobis modi quidem dolor ipsum quam adipisci ut consequatur sunt!</p>
-        </div>
+        <p>And as a usual teenager, I also like playing games particulary shooters, watching anime or movies and spending unhealthy amounts of time on TikTok and trying to make friends</p>
     </div>
 </body>
 </html>
