@@ -10,12 +10,12 @@ function toggleMusic(){
     const isPlaying = !music.paused
     if (isPlaying){
         music.pause()
-        musicToggle.src = "img/muted.png"
+        musicToggle.src = "../img/muted.png"
     }
     else{
         var randomMusic = Math.floor(Math.random() * musicList.length)
         music.src = musicList[randomMusic]
         music.play()
-        musicToggle.src = "img/unmuted.png"
+        musicToggle.src = "../img/unmuted.png"
     }
 }
