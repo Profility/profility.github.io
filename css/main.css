@@ -81,11 +81,16 @@ p {
         padding: 0;
     }
     #content {
+        padding: 2em;
         margin-top: 5em;
         max-width: 80%;
     }
     #profile {
         width: 80px;
         height: 80px;
+    }
+
+    .icon {
+        width: 21px;
     }
 }
