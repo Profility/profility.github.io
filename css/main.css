@@ -33,6 +33,11 @@ body {
     border-radius: 3%;
 }
 
+#about {
+    padding-left: 25px; 
+    line-height: 1.5;
+}
+
 .navigation {
     margin: 0;
     padding: 0;
