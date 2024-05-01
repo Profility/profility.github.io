@@ -70,6 +70,10 @@ a {
     border-radius: 50%;
 }
 
+.post {
+    line-height: 1.5;
+}
+
 .icon {
     opacity: 60%;
     width: 25px;
@@ -78,6 +82,11 @@ a {
 
 .icon:hover {
     opacity: 100%;
+}
+
+.project {
+    margin-bottom: 20px;
+    max-width: 80%;
 }
 
 p {
